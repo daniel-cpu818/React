@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center; 
+}
+
+.app__phrase {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #2d3748;
+  margin-bottom: 30px; /* Agrega espacio debajo del texto */
+  text-align: center;
+}
+.app__author {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #718096;
+}
+
+.app__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 999px;
+  background-color: #e2e2e282;
+  border-color: #f2f2f2c2;
+  border-width: 3px;
+  color: #ffffff;
+  transition-property: transform;
+  transition-duration: 200ms;
+
+}
+.divisor{
+  
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.frases{
+  background-image: url("/img/15643.png");
+  margin-left: auto;
+}
+#titleGalleta{
+  color: #ffffff;
+  font-weight: 700;
+  height: 180px
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .app {
+    background-size: contain; 
+    flex-direction: column; 
+  }
+}
