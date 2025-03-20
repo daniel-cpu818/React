@@ -1,0 +1,23 @@
+.hero {
+    background: url("src/image/0b4e6508e77c265cb23f58ff87f3050b.png");
+    width: 100%;
+    height: 55dvh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px){
+    .hero {
+        height: 25dvh;
+        background-size: contain;
+    }
+} 
+
+@media (orientation: landscape) and (max-width: 768px) {
+    .hero {
+        height: 70dvh;       
+        background-size: cover;
+        background-position: center center;
+    }
+}
